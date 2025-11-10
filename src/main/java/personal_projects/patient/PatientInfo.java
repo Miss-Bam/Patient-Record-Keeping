@@ -5,8 +5,6 @@ public class PatientInfo {
     private String surname;
     private String id_number;
     private String cellphone;
-    private float weight;
-    private float height;
     private String next_of_kin_name;
     private String next_of_kin_cellphone;
 
@@ -15,8 +13,6 @@ public class PatientInfo {
         this.surname = surname;
         this.id_number = id_number;
         this.cellphone = cellphone;
-        this.weight = weight;
-        this.height = height;
     }
 
     public String getName(){
@@ -37,22 +33,6 @@ public class PatientInfo {
 
     public void setCellphone(String cellphone) {
         this.cellphone = cellphone;
-    }
-
-    public float getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public void setHeight(float height) {
-        this.height = height;
     }
 
     public String getNext_of_kin_name() {

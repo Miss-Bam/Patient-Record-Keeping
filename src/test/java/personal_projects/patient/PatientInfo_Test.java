@@ -15,8 +15,6 @@ public class PatientInfo_Test {
         assertEquals("Bam", patient.getSurname());
         assertEquals("9811140389082",patient.getId_number());
         assertEquals("0679516572",patient.getCellphone());
-        assertEquals(109.5F, patient.getWeight());
-        assertEquals(158.4F, patient.getHeight());
     }
 
     @Test
@@ -24,20 +22,6 @@ public class PatientInfo_Test {
     void testChangeOfCellphone(){
         patient.setCellphone("0658238554");
         assertEquals("0658238554",patient.getCellphone());
-    }
-
-    @Test
-    @DisplayName("Changing weight")
-    void testChangeOfWeight(){
-        patient.setWeight(100.0F);
-        assertEquals(100.0F, patient.getWeight());
-    }
-
-    @Test
-    @DisplayName("Changing height")
-    void testChangeOfHeight(){
-        patient.setHeight(157.0F);
-        assertEquals(157.0F,patient.getHeight());
     }
 
 }
