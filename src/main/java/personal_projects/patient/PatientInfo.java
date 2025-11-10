@@ -7,6 +7,8 @@ public class PatientInfo {
     private String cellphone;
     private float weight;
     private float height;
+    private String next_of_kin_name;
+    private String next_of_kin_cellphone;
 
     public PatientInfo(String name, String surname, String id_number, String cellphone, float weight, float height){
         this.name = name;
@@ -51,5 +53,21 @@ public class PatientInfo {
 
     public void setHeight(float height) {
         this.height = height;
+    }
+
+    public String getNext_of_kin_name() {
+        return next_of_kin_name;
+    }
+
+    public void setNext_of_kin_name(String next_of_kin_name) {
+        this.next_of_kin_name = next_of_kin_name;
+    }
+
+    public String getNext_of_kin_cellphone() {
+        return next_of_kin_cellphone;
+    }
+
+    public void setNext_of_kin_cellphone(String next_of_kin_cellphone) {
+        this.next_of_kin_cellphone = next_of_kin_cellphone;
     }
 }
