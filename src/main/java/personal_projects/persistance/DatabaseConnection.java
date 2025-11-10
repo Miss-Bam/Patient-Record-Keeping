@@ -15,4 +15,32 @@ public class DatabaseConnection {
         }
     }
 
+    public static void createDatabase(Connection db_connection){
+
+    }
+
+    public static void patientInfoTable(Connection db_connection){
+        try{
+            Statement statement = db_connection.createStatement();
+        } catch (SQLException e) {
+            System.out.println("Could not create PatientInfo table: "+e.getMessage());
+        }
+    }
+
+    public static void doctorInfoTable(Connection db_connection){
+        try{
+            Statement statement = db_connection.createStatement();
+        } catch (SQLException e) {
+            System.out.println("Could not create PatientInfo table: "+e.getMessage());
+        }
+    }
+
+    public static void healthRecordsTable(Connection db_connection){
+        try{
+            Statement statement = db_connection.createStatement();
+        } catch (SQLException e) {
+            System.out.println("Could not create PatientInfo table: "+e.getMessage());
+        }
+    }
+
 }
