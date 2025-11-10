@@ -10,13 +10,16 @@ public class DatabaseConnection {
         try{
             Connection db_connect = DriverManager.getConnection(db_url);
             System.out.println("Connection to Clinic Database successful");
+            createDatabase(db_connect);
         } catch (SQLException e) {
             System.out.println("Connection failed: "+e.getMessage());
         }
     }
 
     public static void createDatabase(Connection db_connection){
-
+        patientInfoTable(db_connection);
+        doctorInfoTable(db_connection);
+        healthRecordsTable(db_connection);
     }
 
     public static void patientInfoTable(Connection db_connection){
